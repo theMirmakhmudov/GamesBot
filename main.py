@@ -41,6 +41,10 @@ async def cmd_dice2(message: types.Message, bot: Bot):
 async def cmd_dice2(message: types.Message, bot: Bot):
     await bot.send_dice(chat_id=message.from_user.id, emoji=DiceEmoji.DICE)
 
+#@dp.message(Command("dice"))
+#async def cmd_dice(message: types.Message) 
+#   await message.answer_dice(emoji="🎲")
+
 
 async def main() -> None:
     await dp.start_polling(bot, polling_timeout=1)
